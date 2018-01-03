@@ -32,8 +32,7 @@ public class CDPlayerTest {
 
     @Test
     public void checkInjection() {
-        mediaPlayer.play();
-        assertEquals("Content: Disc A by Will", cd.getContent());
+        assertEquals("Content: Disc A by Will", mediaPlayer.play());
     }
 
 }
