@@ -1,6 +1,6 @@
 package com.qwt.jsc.corespring.coreannotations;
 
-import com.qwt.jsc.corespring.coreannotations.config.CDPlayerConfig;
+import com.qwt.jsc.corespring.coreannotations.config.EntryPointConfig;
 import com.qwt.jsc.corespring.coreannotations.model.CompactDisc;
 import com.qwt.jsc.corespring.coreannotations.model.MediaPlayer;
 import org.junit.Test;
@@ -16,7 +16,7 @@ import static junit.framework.TestCase.assertNotNull;
  * Created by Wentao Qian on 1/2/2018.
  */
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(classes=CDPlayerConfig.class)
+@ContextConfiguration(classes= EntryPointConfig.class)
 public class CDPlayerTest {
 
     @Autowired
