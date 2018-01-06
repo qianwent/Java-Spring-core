@@ -6,6 +6,7 @@ import com.qwt.jsc.corespring.coreannotations.model.MediaPlayer;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
@@ -22,7 +23,9 @@ public class CDPlayerTest {
     @Autowired
     MediaPlayer mediaPlayer;
 
-    @Autowired
+//    @Autowired
+//    CompactDisc cd;//Could not autowire. There is more than one bean of 'CompactDisc' type.
+    @Autowired @Qualifier("discB")
     CompactDisc cd;
 
     @Test

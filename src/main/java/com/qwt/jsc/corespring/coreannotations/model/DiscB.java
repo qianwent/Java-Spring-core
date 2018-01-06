@@ -3,13 +3,12 @@ package com.qwt.jsc.corespring.coreannotations.model;
 import org.springframework.stereotype.Component;
 
 /**
- * Created by Wentao Qian on 1/2/2018.
+ * Created by Wentao Qian on 1/6/2018.
  */
-//@Primary
-@Component("discA")
-public class DiscA implements CompactDisc {
+@Component("discB")
+public class DiscB implements CompactDisc {
 
-    private String title = "Disc A";
+    private String title = "Disc B";
     private String artist = "Will";
 
     @Override
